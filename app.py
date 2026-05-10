@@ -512,65 +512,33 @@ if r:
         st.markdown("</div>", unsafe_allow_html=True)
 
 
-import streamlit as st
+# ── Footer ────────────────────────────────────────────────────────────────────
+st.markdown("""
+<div class="notice">
+    ResearchMind · Powered by LangChain multi-agent pipeline · Built with Streamlit
+</div>
+""", unsafe_allow_html=True)
+
 
 # ------------------------------------------------
 # FOOTER
 # ------------------------------------------------
 st.markdown(
     """
-    <!-- Import FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
     .footer {
         position: fixed;
         bottom: 0;
-        left: 0;
         width: 100%;
-        background-color: transparent; /* Set to white or black if you want a solid background */
-        text-align: center;
-        padding: 10px 0;
+        text-align: centered;
         font-size: 16px;
         color: gray;
-        border-top: 1px solid rgba(128, 128, 128, 0.2); /* Subtle top border */
-        z-index: 100;
-    }
-    
-    .footer p {
-        margin: 0;
-        padding-bottom: 5px;
-    }
-    
-    .footer a {
-        color: gray;
-        text-decoration: none;
-        margin: 0 10px;
-        font-size: 22px; /* Icon size */
-        transition: color 0.3s ease;
-    }
-    
-    /* Hover colors for the icons */
-    .footer a.linkedin:hover {
-        color: #0077b5; 
-    }
-    
-    .footer a.github:hover {
-        color: #333; /* Use #fff if you have a dark theme */
     }
     </style>
-    
     <div class="footer">
-        <p>© 2026 | Built by <b>Shreeyansh Asati</b> | ResearchMind</p>
-        <div>
-            <a class="linkedin" href="https://www.linkedin.com/in/shreeyansh-asati-18shreey/" target="_blank" title="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="github" href="https://github.com/SHREEYANSHGIT/" target="_blank" title="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
+        © 2026 | Built by <b>Shreeyansh Asati</b> | ResearchMind
     </div>
     """,
     unsafe_allow_html=True
 )
+
