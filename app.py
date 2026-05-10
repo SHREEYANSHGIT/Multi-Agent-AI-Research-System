@@ -542,14 +542,12 @@ st.markdown(
         z-index: 100;
         font-family: 'DM Sans', sans-serif;
     }
-    
     .footer a {
         color: #a09890;
         text-decoration: none;
         font-size: 18px; /* Icon size */
         transition: color 0.3s ease;
     }
-    
     .footer a:hover {
         color: #ff8c32; /* Match the app's orange highlight on hover */
     }

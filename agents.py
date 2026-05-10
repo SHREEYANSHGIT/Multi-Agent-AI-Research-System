@@ -20,7 +20,8 @@ def get_llm(model_name: str = "llama-3.1-8b-instant"):
 def build_search_agent(model_name: str = "llama-3.1-8b-instant"):
     return create_react_agent(
         model=get_llm(model_name),
-        tools=[web_search]
+        tools=[web_search],
+        prompt="You are a research assistant. Your ONLY available tool is web_search. Do NOT use or invent any other tools. Find the best information for the user's query."
     )
 
 ##second Agent##
@@ -28,7 +29,8 @@ def build_search_agent(model_name: str = "llama-3.1-8b-instant"):
 def build_reader_agent(model_name: str = "llama-3.1-8b-instant"):
     return create_react_agent(
         model=get_llm(model_name),
-        tools=[scrape_url]
+        tools=[scrape_url],
+        prompt="You are a reading assistant. Your ONLY available tool is scrape_url. Do NOT use or invent any other tools (like brave_search). If you cannot find a valid URL to scrape, just output a summary based on the text provided."
     )
 
 
