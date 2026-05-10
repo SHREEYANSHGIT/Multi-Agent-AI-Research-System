@@ -3,6 +3,10 @@
 > **Developed by Shreeyansh Asati**  
 > **An AI/ML Engineer**
 
+DEMO : https://multi-agent-ai-research-system-by-shreeyansh.streamlit.app/ <br>
+LINKEDIN : https://www.linkedin.com/in/shreeyansh-asati-18shreey/
+GITHUB : https://github.com/SHREEYANSHGIT/
+
 ResearchMind is an advanced multi-agent AI research pipeline that autonomously gathers, reads, writes, and evaluates research reports on any given topic. Built with LangGraph, LangChain, Groq, and Streamlit, this system divides cognitive tasks into distinct agents to produce comprehensive, high-quality, and peer-reviewed research outputs.
 
 ## 🌟 Key Features
