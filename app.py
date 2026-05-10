@@ -529,14 +529,56 @@ st.markdown(
     .footer {
         position: fixed;
         bottom: 0;
+        left: 0;
         width: 100%;
-        text-align: centered;
-        font-size: 16px;
-        color: gray;
+        background-color: #0e1117;
+        padding: 12px 20px;
+        text-align: center;
+        font-size: 15px;
+        color: #b0b3b8;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        z-index: 999;
+    }
+
+    .footer a {
+        color: #4da6ff;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+        color: #ffffff;
+    }
+
+    .footer-icons {
+        margin-top: 6px;
+    }
+
+    .footer-icons i {
+        margin-right: 6px;
     }
     </style>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <div class="footer">
-        © 2026 | Built by <b>Shreeyansh Asati</b> | ResearchMind
+        <div>
+            © 2026 | Built with ❤️ by <b>Shreeyansh Asati</b> | ResearchMind
+        </div>
+
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/shreeyansh-asati-18shreey/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a href="https://github.com/SHREEYANSHGIT/" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+        </div>
     </div>
     """,
     unsafe_allow_html=True
