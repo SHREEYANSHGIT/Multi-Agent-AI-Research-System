@@ -1,7 +1,7 @@
 # Multi-Agent AI Research System (ResearchMind)
 
-> **Developed by Shreeyansh Asati**  
-> **An AI/ML Engineer**
+**Developed by Shreeyansh Asati**  
+**An AI/ML Engineer**
 
 DEMO : https://multi-agent-ai-research-system-by-shreeyansh.streamlit.app/ <br>
 LINKEDIN : https://www.linkedin.com/in/shreeyansh-asati-18shreey/<br>
