@@ -514,31 +514,56 @@ if r:
 
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
-<div class="notice">
+<div class="notice" style="margin-bottom: 50px;">
     ResearchMind · Powered by LangChain multi-agent pipeline · Built with Streamlit
 </div>
 """, unsafe_allow_html=True)
 
 
 # ------------------------------------------------
-# FOOTER
+# NEW SINGLE-LINE FOOTER WITH ICONS
 # ------------------------------------------------
 st.markdown(
     """
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
     .footer {
         position: fixed;
-        bottom: 0;
+        bottom: 10px;
+        left: 0;
         width: 100%;
-        text-align: centered;
-        font-size: 16px;
-        color: gray;
+        background: transparent; /* No background box */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px; /* Spacing between text and icons */
+        font-size: 14px;
+        color: #a09890; /* Matches your theme */
+        z-index: 100;
+        font-family: 'DM Sans', sans-serif;
+    }
+    
+    .footer a {
+        color: #a09890;
+        text-decoration: none;
+        font-size: 18px; /* Icon size */
+        transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #ff8c32; /* Match the app's orange highlight on hover */
     }
     </style>
+    
     <div class="footer">
-        © 2026 | Built by <b>Shreeyansh Asati</b> | ResearchMind
+        <span>© 2026 | Built by <b>Shreeyansh Asati</b> | ResearchMind</span>
+        <a href="https://www.linkedin.com/in/shreeyansh-asati-18shreey/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/SHREEYANSHGIT/" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
     </div>
     """,
     unsafe_allow_html=True
 )
-
